@@ -4,7 +4,7 @@ function clearDisplay () {
 }
 
 clearDisplay()
- 
+
 function appendToDisplay (elem) {
   display.value += elem
 }
@@ -18,7 +18,7 @@ function deleteInput () {
 deleteInput()
 
 function Calculate () {
-  let expr = display.value
+  const expr = display.value
   let result = 0
 
   if (expr.includes('+')) {
@@ -33,8 +33,8 @@ function Calculate () {
   } else if (expr.includes('/')) {
     const parts = expr.split('/')
     if (Number(parts[1]) === 0) {
-      display.value = "Error"
-      return;
+      display.value = 'Error'
+      return
     }
     result = Number(parts[0]) / Number(parts[1])
   } else {
@@ -43,3 +43,5 @@ function Calculate () {
 
   display.value = result
 }
+
+Calculate()

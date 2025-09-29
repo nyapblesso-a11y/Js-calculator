@@ -1,6 +1,6 @@
 const display = document.getElementById('display')
 function clearDisplay () {
-display.value = ''
+  display.value = ''
 }
 
 clearDisplay()
@@ -11,36 +11,35 @@ function appendToDisplay (elem) {
 
 appendToDisplay()
 
-
 function deleteInput () {
   display.value = display.value.toString().slice(0, -1)
 }
 
 deleteInput()
 
-function Calculate() {
-  let expr = display.value;
-  let result = 0;
+function Calculate () {
+  let expr = display.value
+  let result = 0
 
   if (expr.includes('+')) {
-    let parts = expr.split('+');
-    result = Number(parts[0]) + Number(parts[1]);
+    const parts = expr.split('+')
+    result = Number(parts[0]) + Number(parts[1])
   } else if (expr.includes('-')) {
-    let parts = expr.split('-');
-    result = Number(parts[0]) - Number(parts[1]);
+    const parts = expr.split('-')
+    result = Number(parts[0]) - Number(parts[1])
   } else if (expr.includes('*')) {
-    let parts = expr.split('*');
-    result = Number(parts[0]) * Number(parts[1]);
+    const parts = expr.split('*')
+    result = Number(parts[0]) * Number(parts[1])
   } else if (expr.includes('/')) {
-    let parts = expr.split('/');
+    const parts = expr.split('/')
     if (Number(parts[1]) === 0) {
-      display.value = "Error";
+      display.value = "Error"
       return;
     }
-    result = Number(parts[0]) / Number(parts[1]);
+    result = Number(parts[0]) / Number(parts[1])
   } else {
-    result = expr; // if no operator, just return the number
+    result = expr
   }
 
-  display.value = result;
+  display.value = result
 }

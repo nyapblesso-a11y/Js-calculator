@@ -1,7 +1,8 @@
-const display = document.getElementById("display");
-let operator = document.getElementsByClassName("button");
+const display = document.getElementById('display');
+const operator = document.getElementsByClassName('button');
+
 function clearDisplay() {
-  display.value = "";
+  display.value = '';
 }
 
 function appendToDisplay(elem) {
@@ -12,9 +13,10 @@ function Calculate() {
   try {
     display.value = eval(display.value);
   } catch {
-    display.value = "Error!";
+    display.value = 'Error!';
   }
 }
+
 function deleteInput() {
   display.value =display.value.toString().slice(0, -1);
 }

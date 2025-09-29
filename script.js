@@ -1,6 +1,6 @@
-  const display = document.getElementById('display')
-  function clearDisplay () {
-  display.value = ''
+const display = document.getElementById('display')
+function clearDisplay () {
+display.value = ''
 }
 
 clearDisplay()
@@ -12,9 +12,9 @@ function appendToDisplay (elem) {
 appendToDisplay()
 
 function Calculate () {
-  try {
-  display.value = math.value(display.value ) 
-  } catch {
+  try{
+    display.value = math.evaluate(display.value ) 
+  } catch{
     display.value = 'Error!'
   }
 }

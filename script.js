@@ -1,28 +1,28 @@
-const display = document.getElementById("display");
+const display = document.getElementById("display")
 function clearDisplay() {
-  display.value = "";
+  display.value = ""
 }
 
-clearDisplay();
+clearDisplay()
 
 function appendToDisplay(elem) {
   display.value += elem;
 }
 
-appendToDisplay();
+appendToDisplay()
 
 function Calculate() {
   try {
-    display.value  = eval(display.value);
+    display.value  = eval(display.valu)
   } catch {
-    display.value  = "Error!";
+    display.value  = "Error!"
   }
 }
 
-Calculate();
+Calculate()
 
 function deleteInput() {
-  display.value = display.value.toString().slice(0, -1);
+  display.value = display.value.toString().slice(0, -1)
 }
 
-deleteInput();
+deleteInput()

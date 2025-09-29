@@ -13,16 +13,16 @@ appendToDisplay()
 
 function Calculate () {
   try {
-    display.value  = eval(display.valu)
+    display.value  =  eval(display.valu)
   } catch {
-    display.value  = 'Error!'
+    display.value  =  'Error!'
   }
 }
 
 Calculate()
 
 function deleteInput () {
-  display.value = display.value.toString().slice(0, -1)
+  display.value  =  display.value.toString().slice(0, -1)
 }
 
 deleteInput()

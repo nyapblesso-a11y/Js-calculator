@@ -13,7 +13,7 @@ appendToDisplay()
 
 function Calculate () {
   try {
-    display.value = eval(display.valu)
+  display.value =Function('"use strict" return (' + display.value + ')')()
   } catch {
     display.value = 'Error!'
   }

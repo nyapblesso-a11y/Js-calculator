@@ -1,6 +1,6 @@
-const display = document.getElementById("display")
+const display = document.getElementById('display')
 function clearDisplay () {
-  display.value = ""
+  display.value = ''
 }
 
 clearDisplay()
@@ -15,7 +15,7 @@ function Calculate () {
   try {
     display.value  = eval(display.valu)
   } catch {
-    display.value  = "Error!"
+    display.value  = 'Error!'
   }
 }
 

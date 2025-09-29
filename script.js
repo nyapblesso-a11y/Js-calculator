@@ -13,9 +13,9 @@ appendToDisplay()
 
 function Calculate () {
   try {
-    display.value  =  eval(display.valu)
+    display.value = eval(display.valu)
   } catch {
-    display.value  =  'Error!'
+    display.value = 'Error!'
   }
 }
 

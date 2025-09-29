@@ -2,11 +2,13 @@ const display = document.getElementById('display')
 function clearDisplay() {
   display.value = ''
 }
+
 clearDisplay()
 
 function appendToDisplay(elem) {
   display.value += elem
 }
+
 appendToDisplay()
 
 function Calculate() {
@@ -16,6 +18,7 @@ function Calculate() {
     display.value = 'Error!'
   }
 }
+
 Calculate()
 
 function deleteInput() {

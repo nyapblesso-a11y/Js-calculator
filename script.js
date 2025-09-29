@@ -11,21 +11,12 @@ function appendToDisplay (elem) {
 
 appendToDisplay()
 
-function Calculate () {
-  try{
-    display.value = math.evaluate(display.value ) 
-  } catch{
-    display.value = 'Error!'
-  }
+
+function deleteInput () {
+  display.value = display.value.toString().slice(0, -1)
 }
 
-// Calculate()
-
-// function deleteInput () {
-//   display.value = display.value.toString().slice(0, -1)
-// }
-
-// deleteInput()
+deleteInput()
 
 function Calculate() {
   let expr = display.value;

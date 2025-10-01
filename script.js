@@ -18,30 +18,28 @@ function deleteInput () {
 deleteInput()
 
 function Calculate () {
-  const expr = display.value
+ let expr = display.value
   let result = 0
 
   if (expr.includes('+')) {
-    const parts = expr.split('+')
+    let parts = expr.split('+')
     result = Number(parts[0]) + Number(parts[1])
   } else if (expr.includes('-')) {
-    const parts = expr.split('-')
+    let parts = expr.split('-')
     result = Number(parts[0]) - Number(parts[1])
   } else if (expr.includes('*')) {
-    const parts = expr.split('*')
+    let parts = expr.split('*')
     result = Number(parts[0]) * Number(parts[1])
   } else if (expr.includes('/')) {
-    const parts = expr.split('/')
+    let parts = expr.split('/')
     if (Number(parts[1]) === 0) {
-      display.value = 'Error'
-      return
+      display.value = "Error"
+      return;
     }
     result = Number(parts[0]) / Number(parts[1])
-  } else {
-    result = expr
-  }
-
+  } 
   display.value = result
 }
 
 Calculate()
+

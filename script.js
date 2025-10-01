@@ -18,8 +18,8 @@ function deleteInput () {
 deleteInput()
 
 function Calculate () {
- const expr = display.value
- let result = 0
+  const expr = display.value
+  let result = 0
 
   if (expr.includes('+')) {
     const parts = expr.split('+')

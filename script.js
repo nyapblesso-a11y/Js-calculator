@@ -19,7 +19,7 @@ deleteInput()
 
 function Calculate () {
  const expr = display.value
- const result = 0
+ let result = 0
 
   if (expr.includes('+')) {
     const parts = expr.split('+')

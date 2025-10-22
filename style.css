@@ -21,17 +21,18 @@ body {
 
 #display {
   width: 100%;
-  height: 8vh;
+  height: 18vh;
   font-size: 5rem;
   text-align: right;
   border: none;
-  background-color: #444;
+  background-color: #333;
   color: white;
+  border: #444 1px solid;
 }
 
 #keys {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 15px;
 }
@@ -52,6 +53,10 @@ button {
   background-color: orange;
 }
 
+.del, .operat {
+  background-color: gray;
+}
+
 button:hover {
   background-color: grey;
 }
@@ -66,4 +71,12 @@ button:active {
 
 .operator:active {
   background-color: #ffc499;
+}
+
+@media screen and (max-width:500px) {
+  #keys {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+
+  }
 }

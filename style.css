@@ -27,7 +27,6 @@ body {
   border: none;
   background-color: #333;
   color: white;
-  border: #444 1px solid;
 }
 
 #keys {
@@ -53,7 +52,8 @@ button {
   background-color: orange;
 }
 
-.del, .operat {
+.del,
+.operat {
   background-color: gray;
 }
 
@@ -73,10 +73,9 @@ button:active {
   background-color: #ffc499;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   #keys {
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
-
   }
 }

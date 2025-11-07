@@ -30,6 +30,9 @@ function Calculate () {
   } else if (expr.includes('*')) {
     const parts = expr.split('*')
     result = Number(parts[0]) * Number(parts[1])
+  } else if (expr.includes('%')) {
+    const parts = expr.split('%')
+    result = (Number(parts[0] / 100) * Number(parts[1]))
   } else if (expr.includes('/')) {
     const parts = expr.split('/')
     if (Number(parts[1]) === 0) {

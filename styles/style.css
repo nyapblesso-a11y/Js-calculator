@@ -48,6 +48,17 @@ button {
   color: white;
 }
 
+.bottom-keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 15px;
+}
+
+.zero {
+  width: 220px;
+}
+
 .operator {
   background-color: orange;
 }
@@ -76,6 +87,23 @@ button:active {
 @media screen and (max-width: 500px) {
   #keys {
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 8px;
+  }
+
+  button {
+    height: 80px;
+    width: 80px;
+    font-size: 20px;
+  }
+
+  .bottom-keys {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    justify-content: space-between;
+    transform: translateY(-1rem);
+  }
+
+  .zero {
+    width: 180px;
   }
 }

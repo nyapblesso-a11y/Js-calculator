@@ -4,7 +4,7 @@
 
 ### Project description
 
-- building as fully responsive avaSript calculator project
+- building as fully responsive JavaScript calculator project
 - implementing what we learn in are JavaScript course on this project
 
 ### PRoject Feature

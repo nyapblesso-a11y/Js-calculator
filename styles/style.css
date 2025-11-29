@@ -50,7 +50,7 @@ button {
 
 .bottom-keys {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 15px;
 }
@@ -84,10 +84,10 @@ button:active {
   background-color: #ffc499;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   #keys {
     grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+    gap: 7px;
   }
 
   button {
@@ -98,12 +98,37 @@ button:active {
 
   .bottom-keys {
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 7px;
     justify-content: space-between;
     transform: translateY(-1rem);
+    
   }
 
   .zero {
     width: 180px;
+  }
+}
+
+@media screen and (width:350) {
+  #keys {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+
+  button {
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+  }
+
+  .bottom-keys {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    justify-content: space-between;
+    transform: translateY(1rem);
+  }
+
+  .zero {
+    width: 140px;
   }
 }

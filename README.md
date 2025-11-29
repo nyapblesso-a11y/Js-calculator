@@ -4,8 +4,8 @@
 
 ### Project description
 
-- building as fully responsive javascript calculator project
-- implementing what we learn in are javascript course on this project
+- building as fully responsive avaSript calculator project
+- implementing what we learn in are JavaScript course on this project
 
 ### PRoject Feature
 
@@ -14,9 +14,9 @@
 
 #### Folder Structure
 
-- A .github an workflow folder with linter.yml file
+- A .GitHub an workflow folder with linter.yml file
 - A folder containing the script
-- A folder containing the styling and the indx,html file
+- A folder containing the styling and the index. HTML file
 
 ### Project Commands
 

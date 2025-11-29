@@ -1,4 +1,4 @@
-## PROJECT NAME
+<!-- ## PROJECT NAME
 
 - Calculator App
 
@@ -22,4 +22,4 @@
 
 run:
 
-- clone: git clone git@github.com:nyapblesso-a11y/Js-calculator.git to clone project
+- clone: git clone git@github.com:nyapblesso-a11y/Js-calculator.git to clone project -->
